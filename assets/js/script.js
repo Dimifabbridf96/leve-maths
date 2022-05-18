@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function(){
 });
 
 /**
- * The main ga 'loop', called when the script is first loaded and after the user's answer has been processed 
+ * The main game 'loop', called when the script is first loaded and after the user's answer has been processed 
  */
 function runGame(gameType){
 
@@ -41,7 +41,7 @@ else if (gameType === "multiply"){
     else if (gameType === "division"){
         displayDivisionQuestion(num1,num2);}
          else{
-alert(`Unknown game type: ${gameType}`);
+alert(`Unknown game type ${gameType}`);
 throw `Unknown game type: ${gameType}. Aborting!`;
 }
 
